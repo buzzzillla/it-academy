@@ -5,7 +5,7 @@
 /* 1.1 Тег элемента */
 body {
     /* свойство: значение; */
-    background-color: #360000; /* Задний фон */
+    background-color: chartreuse ; /* Задний фон */
 }
 
 /* 1.2 Класс элемента */
@@ -49,7 +49,7 @@ body {
 .block-element {
     width: 1500px;
     height: 50px;
-    background-color: cyan;
+    background-color: darkolivegreen ;
     padding: 20px; /* внутренние отступы */
     margin: 20px; /* Внешние отступы */
 }
@@ -60,3 +60,20 @@ body {
 .text-weight {
     font-weight: 700; /* Изменение жирности текста */
 }
+
+.text-italic {
+    font-style: italic; /* Курсив */
+}
+
+.text-underline {
+    text-decoration: underline; /*  Подчеркивание */
+}
+
+.text-center {
+    text-align: center; /* Выравнивание по центру */
+}
+
+.text-family {
+    font-family: Roboto, Arial, sans-serif; /* Семейство шрифтов */
+}
+

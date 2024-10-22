@@ -1,0 +1,6 @@
+.box {
+    display: inline-block;
+    position: relative;
+    width: 1900px;
+    background-color: blue;
+}
