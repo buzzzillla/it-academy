@@ -1,6 +1,26 @@
+body {
+    position: relative;
+    height: 20px;
+}
+
+
 .box {
     display: inline-block;
     position: relative;
-    width: 1900px;
-    background-color: blue;
+    width: 1839px;
+    height: 50px;
+    background-color: darkblue;
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#third {
+    margin-bottom: 0;
+}
+
+
+.main-box {
+    border: 1px solid black;
+    padding: 10px;
 }
