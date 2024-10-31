@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Высота на весь экран */
+}
+
+.main {
+    color: white;
+    background: #17c2a4;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Растянем данный блок */
+    justify-content: center;
+}
+
+.main h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.main button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #87509c;
+    border: none;
+    cursor: pointer; /* Палец при наведении */
+}
+
+.header {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #87509c;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none; /* Без подчеркивания */
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none; /* Убираем точки из списка ul */
+
+}
+
+.navigation li {
+    margin-right: 40px;
+}
+
+.footer {
+    background: #344b8e;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main button:hover {
+    background-color: #344b8e; /* Изменение цвета при наведении */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
