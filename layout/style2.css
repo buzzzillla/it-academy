@@ -1,7 +1,6 @@
 .header {
     color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background: darkorange ;
     padding-top: 10px ;
@@ -10,7 +9,8 @@
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: 15px;
 }
 
 .navigation ul {
@@ -22,4 +22,63 @@
 
 .navigation li {
     margin-right: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.main {
+    margin-left: 15px;
+    padding-top: 15px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+
+.main2 {
+    padding-left: 15px;
+    margin-right: 1000px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.main3 {
+    padding-left: 15px;
+    margin-right: 1000px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.main4 {
+    margin-left: 15px;
+    padding-top: 15px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+
+table {
+    width: 45%;
+    margin-top: 15px;
+}
+
+.main5 {
+    margin-left: 15px;
+    padding-top: 15px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+
+.main6 {
+    padding-left: 15px;
+    margin-right: 1000px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.mai {
+    margin-top: 15px;
+}
+
+.main7 {
+    padding-top: 15px;
+    font-weight: 1000;
+    font-size: 24px;
 }
