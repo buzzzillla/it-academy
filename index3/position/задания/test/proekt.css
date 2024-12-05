@@ -1,4 +1,38 @@
 .button {
-    align-items: center;
-    color: #87509c;
+    width: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 1px;
+
 }
+
+.button2 {
+    width: 105px;
+    background-color: white;
+    border: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pole {
+    width: 209px;
+    padding-bottom: 10px;
+    color: lightgray;
+    border: 1px solid black;
+}
+
+.button3 {
+    width: 50px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 1px;
+}
+
+.calc {
+    width: 220px;
+}
+
