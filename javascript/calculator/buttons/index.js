@@ -48,7 +48,7 @@ button.addEventListener('click', sayHello);
 // Получем кнопку для нахождения суммы
 let sumButton = document.getElementById('sum-button');
 
-// Отслеживаем нажатие на кнопку Найти сумму
+// Отслеживаем нажатие на кнопку найти сумму
 sumButton.addEventListener('click', sumOfNumbers);
 
 // Дополнительно
