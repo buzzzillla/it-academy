@@ -4,5 +4,5 @@ function appendValue(value) {
 }
 
 function compute() {
-input.value = eval(input.value);
+input.value = eval(input.value); }
 
