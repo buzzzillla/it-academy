@@ -12,16 +12,23 @@
         <h1>Добавление товара</h1>
         </div>
         <hr class="line">
-        <p class="form-title">Название</p>
-        <input class="pole">
-        <p>Цена</p>
-        <input class="pole">
+        <div class="form-title">
+            <label for="title">Название</label>
+            <input class="title">
+        </div>
+        <div class="form-price">
+            <label for="price">Цена</label>
+            <input class="price">
+        </div>
+
         <p>Количество</p>
         <input class="pole">
         <p>Артикул</p>
         <input class="pole">
-        <p>Описание</p>
-        <input class="pole2">
+        <div class="form-description">
+        <p >Описание</p>
+        </div>
+        <input class="pole2" placeholder="Напишите описание товара">
         <button id="button">Добавить товар</button>
         <button id="button2" onclick="clearInput()" >Очистить форму</button>
     </div>
@@ -32,25 +39,19 @@
             <div class="nenaid">
             <p>Добавленные товары не найдены</p>
                 <div class="form">
-                    <h2>Добавление задачи</h2>
 
-                    <div class="form-title">
-                        <label for="title">Название</label>
-                        <input id="title">
-                    </div>
+
+
 
                     <div class="form-description">
                         <label for="description">Описание</label>
                         <input id="description">
                     </div>
 
-                    <div class="form-price">
-                        <label for="price">Цена</label>
-                        <input id="price">
-                    </div>
 
 
-                </div>
+
+
 
                 <div id="list"></div>
             </div>

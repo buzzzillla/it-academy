@@ -37,14 +37,14 @@
 }
 
 
-.pole {
+.title {
     display: flex;
     width: 333px;
     padding-bottom: 10px;
 }
 
 
-.pole2 {
+.price {
     width: 333px;
     padding-bottom: 20px;
 }

@@ -2,7 +2,12 @@ let title = document.getElementById("title");
 let description = document.getElementById("description");
 let button = document.getElementById("button");
 let list = document.getElementById("list");
+let searchInput = document.getElementById("search");
+let searchButton = document.getElementById("search-button");
+let resetButton = document.getElementById("reset-button");
+let tasksListHTML = ''
 let count = 0;
+
 
 function addTask () {
     // Создание нового элемента с помощью createElement
@@ -32,7 +37,32 @@ function addTask () {
     task.append(taskNumber,taskTitle, taskDescription, delButton);
     // Добавление нового элемента в конец элемента
     list.append(task);
+
+    tasksListHTML = list.innerHTML;
+
     title.value = '';
     description.value = '';
 }
 button.addEventListener("click", addTask);
+
+function searchTask(){
+    let tasks = document.getElementsByClassName("task");
+    for(let task of tasks) {
+        let titles = task.getElementsByClassName("task-title");
+        let title = titles[0];
+
+        console.log('Пользователь хочет найти', searchInput.value);
+
+        if (title.innerText.includes(searchInput.value) == false) {
+            task.remove();
+        }
+    }
+}
+
+searchButton.addEventListener("click", searchTask);
+
+function resetTasks() {
+    list.innerHTML = tasksListHTML;
+}
+
+resetButton.addEventListener('click', resetTasks)

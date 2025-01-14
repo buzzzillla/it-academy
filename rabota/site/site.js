@@ -35,7 +35,7 @@ function addTask () {
 
     taskTitle.innerHTML = `Название: ${ title.value }`
     taskDescription.innerHTML = `Описание: ${ description.value }`
-    taskPrice.InnerHTML = `Цена: ${ price.value }`
+    taskPrice.innerHTML = `Цена: ${ price.value }`
     delButton.innerHTML = 'Удалить'
     count = count + 1;
     taskNumber.innerHTML = `<b>Товар №${ count }</b>`
