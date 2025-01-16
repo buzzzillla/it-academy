@@ -37,18 +37,36 @@
 }
 
 
-.title {
+#title {
     display: flex;
     width: 333px;
     padding-bottom: 10px;
 }
 
 
-.price {
+#price {
     width: 333px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
 }
 
+#sum {
+    width: 333px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+#description {
+    width: 333px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+#art {
+    width: 333px;
+    padding-bottom: 10px;
+    display: flex;
+}
 
 #button {
     background-color: green;
@@ -65,9 +83,29 @@
 #button2 {
     background-color: grey;
     color: white;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 1px;
+    margin-top: 10px;
+    margin-left: 15px;
     border-color: grey;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+
+.task {
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
 }

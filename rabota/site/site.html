@@ -14,46 +14,38 @@
         <hr class="line">
         <div class="form-title">
             <label for="title">Название</label>
-            <input class="title">
+            <input id="title">
         </div>
         <div class="form-price">
             <label for="price">Цена</label>
-            <input class="price">
+            <input id="price">
         </div>
-
-        <p>Количество</p>
-        <input class="pole">
-        <p>Артикул</p>
-        <input class="pole">
+        <div class="form-sum">
+            <label for='sum'>Количество</label>
+            <input id='sum'>
+        </div>
+        <div class="form-art">
+            <label for="art">Артикул</label>
+            <input id="art">
+        </div>
         <div class="form-description">
-        <p >Описание</p>
+            <label for="description">Описание</label>
+            <input id="description" placeholder="Напишите описание товара">
         </div>
-        <input class="pole2" placeholder="Напишите описание товара">
+        <div class="buttons">
         <button id="button">Добавить товар</button>
-        <button id="button2" onclick="clearInput()" >Очистить форму</button>
+        <button id="button2" onclick="clearInput()">Очистить форму</button>
+        </div>
     </div>
     <div class="box2">
         <div class="dobav2">
         <h1>Добавленные товары</h1>
             <hr class="line">
             <div class="nenaid">
-            <p>Добавленные товары не найдены</p>
                 <div class="form">
-
-
-
-
-                    <div class="form-description">
-                        <label for="description">Описание</label>
-                        <input id="description">
-                    </div>
-
-
-
-
-
-
-                <div id="list"></div>
+                <div id="list">
+                    <p>Добавленные товары не найдены</p>
+                </div>
             </div>
         </div>
     </div>
