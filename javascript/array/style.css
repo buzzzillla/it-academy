@@ -22,3 +22,14 @@
 .user-name {
   text-align: center;
 }
+#button {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+  border-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+
