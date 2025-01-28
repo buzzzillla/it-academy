@@ -65,4 +65,22 @@ function resetTasks() {
     }
 }
 
+let postsList = document.getElementById('posts-list')
+let posts = [];
+
+    async function getPosts () {
+        let response = await axios.get('https://dummyjson.com/posts');
+        posts = response.data.posts;
+    }
+
+    function showPosts() {
+        postsList.innerHTML = '';
+        for (let post of posts) {
+            let postTitle = document.createElement("div");
+            let postBody = document.createElement("div");
+
+            postTitle.innerHTML=''
+            postBody.innerHTML=''
+        }
+    }
 resetButton.addEventListener('click', resetTasks)
