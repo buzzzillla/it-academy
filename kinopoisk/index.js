@@ -25,7 +25,7 @@ function showFilms() {
         let filmPoster = document.createElement('div');
         let filmName = document.createElement('div');
 
-        filmRating.innerHTML = `${ film.ratingKinopoisk }`;
+        filmRating.innerHTML = `${ film.ratingKinopoisk || film.rating }`;
         filmPoster.innerHTML = `<img class="movie__cover" src = "${ film.posterUrl }"  alt = ''>`
         filmName.innerHTML = `${ film.nameRu } (${ film.year })`;
 
@@ -63,6 +63,30 @@ function changePage() {
     }
 }
 
+let buttonPoisk = document.getElementById('poisk')
+
+async function searchFilms() {
+    let input = document.getElementById('input');
+    let response = await axios.get('https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword', {
+        params: {
+            keyword: input.value,
+        },
+        headers: {
+            'X-API-KEY': 'c5d1b7b1-4b6f-41e9-855a-292c1e102820',
+            'Content-Type': 'application/json',
+        },
+    });
+    films = response.data.films;
+    showFilms();
+}
+
+buttonPoisk.addEventListener('click', searchFilms);
+
+async function buttonSbros() {
+    input.value = '';
+}
+
+buttonSbros.addEventListener('click', buttonSbros);
 
 getFilms();
 changePage()
