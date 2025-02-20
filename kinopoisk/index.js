@@ -82,11 +82,28 @@ async function searchFilms() {
 
 buttonPoisk.addEventListener('click', searchFilms);
 
+let buttonCbroc = document.getElementById('sbros')
+
 async function buttonSbros() {
     input.value = '';
+    getFilms();
 }
 
-buttonSbros.addEventListener('click', buttonSbros);
+buttonCbroc.addEventListener('click', buttonSbros);
+
+let movieCard = document.getElementById('movie');
+
+async function redirectToMovie() {
+    // Указываем ссылку на html-страницу о фильме movie.html
+    // Добавляем к ссылке параметр id (записывается через ?=), в котором укажем id фильма на сайте кинопоиска
+    let url = `movie.html?id=${ movie.kinopoiskId }`;
+    // Откроем новое окно в браузере по ссылке вида: movie.html?id=123
+    // Подробнее об открытии окон в браузере: https://learn.javascript.ru/popup-windows
+    window.open(url, '_self');
+}
+
+movieCard.addEventListener('click', redirectToMovie);
 
 getFilms();
 changePage()
+
