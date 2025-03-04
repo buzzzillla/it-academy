@@ -1,32 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;0,800;0,900;1,300;1,500&display=swap");
 
 * {
-  margin:      0;
-  padding:     0;
-  box-sizing:  border-box;
-  font-family: "Jost", sans-serif;
+    margin:      0;
+    padding:     0;
+    box-sizing:  border-box;
+    font-family: "Jost", sans-serif;
 }
 
 body {
-  background-color: rgb(0, 102, 138);
-  overflow:         hidden;
+    background-color: rgb(0, 102, 138);
+    overflow:         hidden;
+}
+
+button {
+    height:           50px;
+    background-color: black;
+    color:            white;
+    border-radius:    12px;
+    border:           none;
+    cursor:           pointer;
 }
 
 .app {
-  display:         flex;
-  align-items:     center;
-  justify-content: center;
-  height:          100vh;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    height:          100vh;
 }
 
 .companies-card {
-  max-width:        700px;
-  width:            100%;
-  padding:          24px;
-  margin:           20px;
-  border-radius:    20px;
-  z-index:          9999;
-  background-color: #ffffff;
+    max-width:        700px;
+    width:            100%;
+    padding:          24px;
+    margin:           20px;
+    border-radius:    20px;
+    z-index:          9999;
+    background-color: #ffffff;
 }
 
 .card-title {
@@ -52,13 +61,7 @@ body {
 }
 
 .search-button {
-    width:            100px;
-    height:           50px;
-    background-color: black;
-    color:            white;
-    border-radius:    12px;
-    border:           none;
-    cursor:           pointer;
+    width: 100px;
 }
 
 .companies-list {
@@ -72,8 +75,9 @@ body {
 }
 
 .company {
-    padding:       8px 0;
+    padding:       8px;
     border-bottom: 1px solid #f1f1f1;
+    cursor:        pointer;
 }
 
 .company-name {
@@ -82,4 +86,32 @@ body {
 
 .company:last-child {
     border-bottom: none;
+}
+
+.company-button {
+    width: 100%;
+    font-size: 16px;
+}
+
+.company-card__title, .company-card__property {
+    margin-bottom: 8px;
+}
+
+.company-card__status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-card__status.active {
+    color: green;
+}
+
+.company-card__status.inactive {
+    color: red;
+}
+
+.company-card__button {
+    width:      100%;
+    font-size:  16px;
+    margin-top: 8px;
 }
