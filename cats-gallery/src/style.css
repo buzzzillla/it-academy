@@ -1,0 +1,53 @@
+body {
+  margin:           0;
+  height:           100vh;
+  color:            #ffffff;
+  font-family:      "Open Sans", sans-serif;
+  background-color: #000000;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  height:          100vh;
+  margin:          0;
+}
+
+.pets-slider {
+  width:           100%;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+}
+
+.pet-image {
+  flex:       1;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.button-prev, .button-next {
+  position:   absolute;
+  top:        50%;
+  transform:  translateY(-50%);
+  font-size:  24px;
+  appearance: none;
+  background: #ffffff;
+  width:      80px;
+  height:     80px;
+  border:     none;
+  color:      #000000;
+}
+
+.button-prev {
+  left: 0;
+}
+
+.button-next {
+  right: 0;
+}
