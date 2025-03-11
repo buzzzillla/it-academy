@@ -27,7 +27,7 @@ async function getCompanies() {
     },
   };
   let response = await axios.post(url, data, options)
-  // ПОЛУЧЕНИЕ ЗНАЧЕНИЯ ПЕРЕМЕННОЙ  (Hi OPi HA MiNЯ)
+  // ПОЛУЧЕНИЕ ЗНАЧЕНИЯ ПЕРЕМЕННОЙ  (Hi OPi HA MiНЯ)
   companies.value = response.data.suggestions
 }
   // функция для выбора организации
