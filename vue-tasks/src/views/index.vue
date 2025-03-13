@@ -8,10 +8,12 @@ let towns = ref([])
 
 async function addNames() {
     names.value.push(search.value)
+    search.value = '';
 }
 
 async function addTowns() {
     towns.value.push(search2.value)
+    search2.value = '';
 }
 </script>
 
@@ -28,7 +30,9 @@ async function addTowns() {
       id="add">Добавить</button>
       <h2 id="place">Место для добавления</h2>
       <ul>
-        <li v-for="name in names">{{ name }}</li>
+        <li
+            class="names"
+            v-for="name in names" >{{ name }}</li>
       </ul>
   </div>
     <div id="block2">
@@ -42,7 +46,9 @@ async function addTowns() {
       id="add">Добавить</button>
       <h2 id="place">Место для добавления</h2>
       <ol>
-        <li v-for="town in towns">{{ town }}</li>
+        <li
+            class="towns"
+            v-for="town in towns">{{ town }}</li>
       </ol>
     </div>
   </div>
@@ -65,5 +71,14 @@ async function addTowns() {
 
 #block1, #block2 {
   width: 50%;
+}
+
+.towns {
+  color: red;
+  text-decoration: underline;
+}
+
+.names {
+  color: limegreen;
 }
 </style>
