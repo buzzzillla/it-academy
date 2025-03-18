@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import index from './views/index.vue'
 import second from './views/second.vue'
 import third from './views/third.vue'
+import fourth from './views/fourth.vue'
 
 
 // переменная со страницами приложения
@@ -21,6 +22,10 @@ let routes = [
         path: '/third',
         component: third,
     },
+    {
+        path: '/fourth',
+        component: fourth,
+    }
 ];
 
 let router = createRouter({
