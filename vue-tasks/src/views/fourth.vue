@@ -40,24 +40,22 @@ faf()
   background-color: red;
   height: 150px;
   width: 150px;
-  padding: 20px;
 }
 
 .blue {
   background-color: blue;
   height: 150px;
   width: 150px;
-  padding: 20px;
 }
 
 .green {
   background-color: green;
   height: 150px;
   width: 150px;
-  padding: 20px;
 }
 
 .blocks {
   display: flex;
+  flex-wrap: wrap;
 }
 </style>
